@@ -14,3 +14,5 @@ $routes->post('signup/store', 'Signup::store');
 $routes->post('login/authenticate', 'Login::authenticate');
 $routes->get('dashboard', 'Dashboard::index');
 $routes->get('logout', 'Login::logout');
+$routes->get('profile', 'Profile::index');
+$routes->post('profile/update', 'Profile::update');
