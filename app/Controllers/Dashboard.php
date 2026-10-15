@@ -9,6 +9,6 @@ class Dashboard extends BaseController
         if (!$session->get('isLoggedIn')) {
             return redirect()->to(base_url('login'));
         }
-        echo "Inicio de sesión correcto. Bienvenido " . $session->get('name');
+        return view('dashboard_view');
     }
 }
