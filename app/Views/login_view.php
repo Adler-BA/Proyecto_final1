@@ -84,13 +84,13 @@ font-family: Arial, sans-serif;
 <body>
     <div class="navbar">
         <div>
-            <a href="#">Home</a>
+            <a href="<?= base_url('/') ?>">Home</a>
             <a href="#">English</a>
             <a href="#">Español</a>
         </div>
         <div>
-            <a href="#">Sing Up</a>
-            <a href="#">Log In</a>
+            <a href="<?= base_url('signup') ?>">Sign Up</a>
+            <a href="<?= base_url('login') ?>">Log In</a>
         </div>
     </div>
     <div class="Login-container">
