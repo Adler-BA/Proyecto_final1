@@ -23,7 +23,7 @@ class Signup extends BaseController
         $data = [
             'name' => $name,
             'email' => $email,
-            'password' => $password,
+            'password' => $hashedPassword,
             'active' => 1,
             'administrator' => 0
         ];

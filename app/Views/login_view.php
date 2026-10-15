@@ -95,7 +95,7 @@ font-family: Arial, sans-serif;
     </div>
     <div class="Login-container">
         <h2>Login</h2>
-        <form action="" method="POST">
+        <form action="<?= base_url('login/authenticate') ?>" method="POST">
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
