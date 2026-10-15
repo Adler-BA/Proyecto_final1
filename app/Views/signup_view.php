@@ -33,7 +33,7 @@
     <div class="signup-container">
         <h2>Sign Up</h2>
 
-        <form action="" method="POST">
+        <form action="<?= base_url('signup/store') ?>" method="POST">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
