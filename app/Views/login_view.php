@@ -110,7 +110,7 @@ font-family: Arial, sans-serif;
         </div>
     <div class="link-container">
         <button type="submit" class="btn-login">Log In</button>
-        <a href="#">Forgot Password</a>
+        <a href="<?= base_url('forgot-password') ?>">Forgot Password</a>
     </div>
     </form>
 </div>
