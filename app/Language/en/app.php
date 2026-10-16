@@ -51,4 +51,5 @@ return [
     'save' => 'Save',
     'send' => 'Send',
     'reset_password' => 'Reset Password',
+    'delete_photo' => 'Delete Photo',
 ];

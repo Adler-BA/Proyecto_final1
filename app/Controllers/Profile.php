@@ -22,19 +22,13 @@ class Profile extends BaseController
         if (!$session->get('isLoggedIn')) {
             return redirect()->to(base_url('login'));
         }
-        $userModel = new UserModel();
+        $userModel = new \App\Models\UserModel();
         $userId = $session->get('id');
         $currentUser = $userModel->find($userId);
-
         $current_password = $this->request->getPost('current_password');
         if(!password_verify($current_password, $currentUser['password'])) {
-            $session->setFlashdata('Error.', 'Contraseñal actual incorrecta. Los cambios no han sido guardados');
+            $session->setFlashdata('error', 'Contraseña actual incorrecta. Los cambios no han sido guardados.');
             return redirect()->to(base_url('profile'));
-        }
-
-        $new_password = $this->request->getPost('new_password');
-        if (!empty($new_password)) {
-            $data['password'] = password_hash($new_password, PASSWORD_DEFAULT);
         }
         $data = [
             'name' => $this->request->getPost('name'),
@@ -45,14 +39,16 @@ class Profile extends BaseController
             $data['password'] = password_hash($new_password, PASSWORD_DEFAULT);
         }
         $file = $this->request->getFile('profile_image');
-        if ($file && $file->isValid() && !$file->hasMoved()) {
-            $imageName = $file->getRandomName();
-            $file->move('uploads/', $imageName);
-            $data['profile_image'] = $imageName;
+        if ($file && $file->isValid() && ! $file->hasMoved()) {
+            $newName = $file->getRandomName();
+            $file->move(FCPATH . 'uploads/profiles/', $newName);
+            $data['profile_picture'] = $newName;
+            session()->set('profile_picture', $newName);
         }
         $userModel->update($userId, $data);
         $session->set('name', $data['name']);
-        $session->setFlashdata('Completado.', 'Perfil actualizado');
+        $session->set('email', $data['email']);
+        $session->setFlashdata('success', 'El perfil ha sido actualizado correctamente.');
 
         return redirect()->to(base_url('profile'));
     }
@@ -90,7 +86,29 @@ class Profile extends BaseController
     if ($emailService->send()) {
         return redirect()->back()->with('success', 'Se te ha enviado un enlace de recuperación a tu correo electrónico.');
     } else {
-        return redirect()->back()->with('error', 'No se pudo enviar el enlace de recuperación.');
+        return redirect()->back()->with('error', 'No se pudo enviar el enlace de recuperación.');        
     }
-}
+    }
+    public function deletePhoto()
+    {
+        $session = session();
+        $userId = $session->get('id');
+        $fileName = $session->get('profile_picture');
+
+        if ($fileName) {
+           $filePath = FCPATH . 'uploads/profiles/' . $fileName;
+           if (file_exists($filePath)) {
+                unlink($filePath);
+            } 
+            $userModel = new \App\Models\UserModel();
+            $userModel->update($userId, ['profile_picture' => null]);
+            $session->remove('profile_picture');
+
+            return redirect()->back()->with('success', 'La foto ha sido eliminada correctamente.');
+        }
+
+        return redirect()->back()->with('error', 'No hay ninguna foto para eliminar.');
+    }
+
+
 }

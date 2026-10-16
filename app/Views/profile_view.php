@@ -37,6 +37,7 @@
     </div>
     <div class="container">
         <h2><?= lang('app.title') ?></h2>
+
         <?php if(session()->getFlashdata('error')): ?>
             <div class="msg-error"><?= session()->getFlashdata('error') ?></div>
         <?php endif; ?>
@@ -44,11 +45,16 @@
         <?php if(session()->getFlashdata('success')): ?>
             <div class="msg-success"><?= session()->getFlashdata('success') ?></div>
         <?php endif; ?>
-        <?php if(!empty($user_info['profile_image'])): ?>
-            <img src="<?= base_url('uploads/'.$user_info['profile_image']) ?>" class="profile-img-preview" alt="Profile Image">
+
+        <div style="text-align: center; margin-bottom: 30px;">
+           <?php if(session()->get('profile_picture')): ?>
+           <img src="/Proyecto_final1/public/uploads/profiles/<?= session()->get('profile_picture') ?>" class="profile-img-preview" alt="Profile Image" width="150" height="150" style="border-radius: 50%; object-fit: cover; border: 3px solid #4CAF50;">
+        <br>
+          <a href="<?= base_url('profile/deletePhoto') ?>" style="color: #f44336; font-size: 14px; text-decoration: none; display: inline-block; margin-top: 10px; font-weight: bold;"><?= lang('app.delete_photo') ?></a>
         <?php else: ?>
-            <img src="https://via.placeholder.com/150" class="profile-img-preview" alt="Default Profile">
+        <img src="https://via.placeholder.com/150" class="profile-img-preview" alt="Default Profile" width="150" height="150" style="border-radius: 50%; object-fit: cover; border: 3px solid #ccc;">
         <?php endif; ?>
+        </div>  
         <form action="<?= base_url('profile/update') ?>" method="POST" enctype="multipart/form-data">
             
             <div class="form-group">
@@ -77,7 +83,6 @@
                 <label style="color: #d32f2f;"><?= lang('app.current_password') ?></label>
                 <input type="password" name="current_password" required>
             </div>
-
             <button type="submit" class="btn-save"><?= lang('app.save_changes') ?></button>
         </form>
     </div>

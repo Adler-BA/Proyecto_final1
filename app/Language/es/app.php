@@ -51,4 +51,5 @@ return [
     'save' => 'Guardar',
     'send' => 'Enviar',
     'reset_password' => 'Restablecer Contraseña',
+    'delete_photo' => 'Eliminar Foto',
 ];

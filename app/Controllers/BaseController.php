@@ -67,4 +67,36 @@ abstract class BaseController extends Controller
             $this->request->setLocale($session->get('locale'));
         }
     }
+    public function uploadPhoto()
+    {
+        $session = session();
+        $userId = $session->get('id');
+        $validationRule = [
+            'profile_image' => [
+                'label' => 'Image File',
+                'rules' => 'uploaded[profile_image]'
+                    . '|is_image[profile_image]'
+                    . '|mime_in[profile_image,image/jpg,image/jpeg,image/png]'
+                    . '|max_size[profile_image,2048]', 
+                ],
+        ];
+
+        if (! $this->validate($validationRule)) {
+            return redirect()->back()->with('error', 'Error: Archivo inválido o muy pesado. Usa JPG/PNG (Max 2MB).');
+        }
+
+        $file = $this->request->getFile('profile_image');
+
+        if ($file->isValid() && ! $file->hasMoved()) {
+            $newName = $file->getRandomName();
+            $file->move(FCPATH . 'uploads/profiles/', $newName);
+            $userModel = new \App\Models\UserModel();
+            $userModel->update($userId, ['profile_picture' => $newName]);
+            $session->set('profile_picture', $newName);
+
+            return redirect()->back()->with('success', 'Foto actualizada.');
+        }
+
+        return redirect()->back()->with('error', 'Error al procesar la imagen.');
+    }  
 }

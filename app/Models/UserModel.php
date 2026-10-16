@@ -16,7 +16,8 @@ class UserModel extends Model
         'administrator',
         'reset_token',
         'reset_expires_at',
-        'profile_image'
+        'profile_image',
+        'profile_picture',
     ];
     protected $useTimestamps  = true;
     protected $createdField   = 'created_at';

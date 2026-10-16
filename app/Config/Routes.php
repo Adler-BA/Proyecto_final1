@@ -36,3 +36,5 @@ $routes->get('forgot-password', 'Login::forgotPassword');
 $routes->post('login/sendResetLink', 'Login::sendResetLink');
 $routes->get('reset-password/(:any)', 'Login::resetPassword/$1');
 $routes->post('login/updatePassword', 'Login::updatePassword');
+$routes->post('dashboard/uploadPhoto', 'Dashboard::uploadPhoto');
+$routes->get('profile/deletePhoto', 'Profile::deletePhoto');
