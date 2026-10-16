@@ -30,15 +30,17 @@ class Login extends BaseController
                     'isLoggedIn'    => TRUE
                 ];
                 $session->set($ses_data);
+                if ($this->request->getPost('remember')) {
+                    $this->response->setCookie('remember_user', $user['id'], 2592000);
+                }
                 return redirect()->to(base_url('dashboard'));
             } else {
-                return redirect()->back()->with('error', 'La contraseña es incorrecta');
+                return redirect()->back()->with('Error.', 'La contraseña es incorrecta');
             }
         } else {
-            return redirect()->back()->with('error', 'El correo es invalido.');
+            return redirect()->back()->with('Error.', 'El correo es invalido.');
         }
     }
-
     public function logout()
     {
         $session = session();

@@ -34,7 +34,7 @@ abstract class BaseController extends Controller
      *
      * @return void
      */
-    public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
+    public function initController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\ResponseInterface $response, \Psr\Log\LoggerInterface $logger)
     {
         // Load here all helpers you want to be available in your controllers that extend BaseController.
         // Caution: Do not put the this below the parent::initController() call below.
@@ -42,6 +42,23 @@ abstract class BaseController extends Controller
 
         // Caution: Do not edit this line.
         parent::initController($request, $response, $logger);
+        $this->session = \Config\Services::session();
+        if (!$this->session->get('isLoggedIn') && $this->request->getCookie('remember_user')) {
+            
+            $userId = $this->request->getCookie('remember_user');
+            $userModel = new \App\Models\UserModel();
+            $user = $userModel->find($userId);
+            if ($user) {
+                $ses_data = [
+                    'id'            => $user['id'],
+                    'name'          => $user['name'],
+                    'email'         => $user['email'],
+                    'administrator' => $user['administrator'],
+                    'isLoggedIn'    => TRUE
+                ];
+                $this->session->set($ses_data);
+            }
+        }
 
         // Preload any models, libraries, etc, here.
         // $this->session = service('session');
