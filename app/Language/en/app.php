@@ -49,4 +49,6 @@ return [
     'newer'         => 'Newer',
     'edit_task' => 'Edit Task',
     'save' => 'Save',
+    'send' => 'Send',
+    'reset_password' => 'Reset Password',
 ];

@@ -95,6 +95,11 @@ font-family: Arial, sans-serif;
     </div>
     <div class="Login-container">
         <h2><?= lang('app.login') ?></h2>
+        <?php if(session()->getFlashdata('success')): ?>
+        <div style="background-color: #c8e6c9; color: #2e7d32; padding: 10px; border-radius: 5px; text-align: center; margin-bottom: 15px;">
+        <?= session()->getFlashdata('success') ?>
+        </div>
+        <?php endif; ?>
         <form action="<?= base_url('login/authenticate') ?>" method="POST">
             <div class="form-group">
                 <label for="email"><?= lang('app.email') ?></label>

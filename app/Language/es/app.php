@@ -49,4 +49,6 @@ return [
     'user'          => 'Usuario',
     'edit_task' => 'Editar Tarea',
     'save' => 'Guardar',
+    'send' => 'Enviar',
+    'reset_password' => 'Restablecer Contraseña',
 ];

@@ -14,6 +14,8 @@ class UserModel extends Model
         'password',
         'active',
         'administrator',
+        'reset_token',
+        'reset_expires_at',
         'profile_image'
     ];
     protected $useTimestamps  = true;

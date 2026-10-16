@@ -30,20 +30,25 @@
         </div>
     </div>
     <div class="reset-container">
-        <h2>Password Reset</h2>
-        <form action="" method="POST">
+        <h2><?= lang('app.reset_password') ?></h2>
+        <?php if(session()->getFlashdata('error')): ?>
+            <div class="alert-error"><?= session()->getFlashdata('error') ?></div>
+        <?php endif; ?>
+        <form action="<?= base_url('login/updatePassword') ?>" method="POST">
+            <input type="hidden" name="token" value="<?= isset($token) ? $token : '' ?>">
+
             <div class="form-group">
-                <label for="passoword">Password</label>
+                <label for="password"><?= lang('app.password') ?></label>
                 <input type="password" id="password" name="password" required>
             </div>
-        <div class="form-group">
-            <label for="repeat_password">Repeat Password</label>
-            <input type="password" id="repeart_password" name="repeat_password" required>
-        </div>
-        <div class="btn-container">
-            <button type="submit" class="btn-reset">Rest Password</button>
-        </div>
-    </form>
+            <div class="form-group">
+                <label for="repeat_password"><?= lang('app.repeat_password') ?></label>
+                <input type="password" id="repeat_password" name="repeat_password" required>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn-reset"><?= lang('app.reset_password') ?></button>
+            </div>
+        </form>
     </div>
 </body>
 </html>

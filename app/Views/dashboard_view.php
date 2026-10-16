@@ -39,6 +39,11 @@
             <a href="<?= base_url('signup') ?>"><?= lang('app.signup') ?></a>
                 <a href="<?= base_url('login') ?>"><?= lang('app.login') ?></a>
             <?php endif; ?>
+            <?php if(session()->getFlashdata('success')): ?>
+                <div style="background-color: #c8e6c9; color: #2e7d32; padding: 10px; border-radius: 5px; text-align: center; margin: 10px;">
+                <?= session()->getFlashdata('success') ?>
+                </div>
+            <?php endif; ?>
         </div>
     </div>            
     <div class="dashboard-container">

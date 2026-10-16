@@ -32,7 +32,7 @@
     </div>
     <div class="forgot-container">
         <h2><?= lang('app.forgot_password') ?></h2>
-        <form actions="" methods="POST">
+        <form action="<?= base_url('login/sendResetLink') ?>" method="POST">
             <div class="form-group">
                 <label for="email"><?= lang('app.email') ?></label>
                 <input type="email" id="email" name="email" required>

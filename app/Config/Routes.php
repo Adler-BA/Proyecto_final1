@@ -32,3 +32,7 @@ $routes->get('users/delete/(:num)', 'Users::delete/$1');
 $routes->get('profile', 'Profile::index');
 $routes->post('profile/update', 'Profile::update');
 $routes->get('lang/(:any)', 'Language::set/$1');
+$routes->get('forgot-password', 'Login::forgotPassword');
+$routes->post('login/sendResetLink', 'Login::sendResetLink');
+$routes->get('reset-password/(:any)', 'Login::resetPassword/$1');
+$routes->post('login/updatePassword', 'Login::updatePassword');
