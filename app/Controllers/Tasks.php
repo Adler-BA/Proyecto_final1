@@ -5,14 +5,21 @@ use App\Models\TaskModel;
 
 class Tasks extends BaseController
 {
-    public function index()
+   public function index()
     {
         $session = session();
         if (!$session->get('isLoggedIn')) {
             return redirect()->to(base_url('login'));
         }
-        $taskModel = new TaskModel();
-        $data['tasks'] = $taskModel->orderBy('id', 'DESC')->findAll();
+        $taskModel = new \App\Models\TaskModel();
+        $search = $this->request->getGet('search');
+        if (!empty($search)) {
+            $taskModel->like('description', $search);
+        }
+        $data['tasks'] = $taskModel->orderBy('id', 'DESC')->paginate(5);
+        $data['pager'] = $taskModel->pager;
+        $data['search'] = $search;
+        
         return view('tasks_view', $data);
     }
     public function store()
