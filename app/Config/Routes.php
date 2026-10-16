@@ -25,3 +25,7 @@ $routes->post('tasks/update/(:num)', 'Tasks::update/$1');
 $routes->get('users', 'Users::index');
 $routes->get('users/new', 'Users::create');
 $routes->post('users/store', 'Users::store');
+$routes->get('users/show/(:num)', 'Users::show/$1');
+$routes->get('users/edit/(:num)', 'Users::edit/$1');
+$routes->post('users/update/(:num)', 'Users::update/$1');
+$routes->get('users/delete/(:num)', 'Users::delete/$1');

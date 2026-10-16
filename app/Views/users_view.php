@@ -51,7 +51,7 @@
                 <?php foreach($users as $user): ?>
                 <tr>
                     <td>
-                        <a href="<?= base_url('users/show'.$user['id']) ?>" style="text-decoration: none; color: #2196F3; font-weight: bol;">
+                        <a href="<?= base_url('users/show/'.$user['id']) ?>" style="text-decoration: none; color: #2196F3; font-weight: bol;">
                             <?= esc($user['name']) ?>
                         </a>
                     </td>

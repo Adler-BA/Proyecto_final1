@@ -41,4 +41,53 @@ class Users extends BaseController
     $userModel->insert($data);
         return redirect()->to(base_url('users'));
     }
+    public function show($id = null)
+    {
+        $session = session();
+        if (!$session->get('isLoggedIn') || $session->get('administrator') != true) return redirect()->to(base_url('tasks'));
+
+        $userModel = new UserModel();
+        $data['user_info'] = $userModel->find($id);
+        return view('user_show_view', $data);
+    }
+    public function edit($id = null)
+    {
+        $session = session();
+        if (!$session->get('isLoggedIn') || $session->get('administrator') != true) return redirect()->to(base_url('tasks'));
+
+        $userModel = new UserModel();
+        $data['user_info'] = $userModel->find($id);
+        return view('user_edit_view', $data);
+    } 
+    public function update($id = null)
+    {
+        $session = session();
+        if (!$session->get('isLoggedIn') || $session->get('administrator') != true) return redirect()->to(base_url('tasks'));
+
+        $userModel = new UserModel();
+        
+        $data = [
+            'name'          => $this->request->getPost('name'),
+            'email'         => $this->request->getPost('email'),
+            'active'        => $this->request->getPost('active') ? 1 : 0,
+            'administrator' => $this->request->getPost('administrator') ? 1 : 0,
+        ];
+     $password = $this->request->getPost('password');
+        if (!empty($password)) {
+            $data['password'] = password_hash($password, PASSWORD_DEFAULT);
+        }
+
+        $userModel->update($id, $data);
+        return redirect()->to(base_url('users/show/'.$id));
+    }
+
+    public function delete($id = null)
+    {
+        $session = session();
+        if (!$session->get('isLoggedIn') || $session->get('administrator') != true) return redirect()->to(base_url('tasks'));
+
+        $userModel = new UserModel();
+        $userModel->delete($id);
+        return redirect()->to(base_url('users'));
+    }   
 }
