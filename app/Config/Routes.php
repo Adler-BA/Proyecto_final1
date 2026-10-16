@@ -16,3 +16,6 @@ $routes->get('dashboard', 'Dashboard::index');
 $routes->get('logout', 'Login::logout');
 $routes->get('profile', 'Profile::index');
 $routes->post('profile/update', 'Profile::update');
+$routes->get('tasks', 'Tasks::index');
+$routes->post('tasks/store', 'Tasks::store');
+$routes->get('tasks/delete/(:num)', 'Tasks::delete/$1');

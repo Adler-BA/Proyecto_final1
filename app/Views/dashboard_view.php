@@ -24,7 +24,7 @@
             <?php if(session()->get('administrator') == 1): ?>
             <a href="<?= base_url('users') ?>">Users</a>
             <?php endif; ?>
-            <a href="<?= base_url('task') ?>">Task</a>
+            <a href="<?= base_url('tasks') ?>">Tasks</a>
             <a href="<?= base_url('logout') ?>" class="logout-btn">Log Out</a>
         </div>
     </div>
