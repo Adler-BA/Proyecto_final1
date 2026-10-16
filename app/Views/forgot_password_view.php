@@ -21,25 +21,25 @@
 <body>
     <div class="navbar">
         <div>
-            <a href="<?= base_url('/') ?>">Home</a>
-            <a href="#">English</a>
-            <a href="#">Español</a>
+        <a href="<?= base_url('/') ?>"><?= lang('app.home') ?></a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-left: 15px;">EN</a>
+            <a href="<?= base_url('lang/es') ?>">ES</a>
         </div>
         <div>
-            <a href="<?= base_url('signup') ?>">Sign Up</a>
-            <a href="<?= base_url('login') ?>">Log In</a>
+            <a href="<?= base_url('signup') ?>"><?= lang('app.signup') ?></a>
+            <a href="<?= base_url('login') ?>"><?= lang('app.login') ?></a>
         </div>
     </div>
     <div class="forgot-container">
-        <h2>Forgot Password</h2>
+        <h2><?= lang('app.forgot_password') ?></h2>
         <form actions="" methods="POST">
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email"><?= lang('app.email') ?></label>
                 <input type="email" id="email" name="email" required>
             </div>    
             <div class="btn-container">
-                <button type="submit" class="btn-send">Send</button>
-                <a href="<?= base_url('login') ?>" class="btn-cancel">Cancel</a>
+                <button type="submit" class="btn-send"><?= lang('app.send') ?></button>
+                <a href="<?= base_url('login') ?>" class="btn-cancel"><?= lang('app.cancel') ?></a>
             </div>
         </form>
     </div>

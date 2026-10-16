@@ -15,24 +15,32 @@
 </head>
 <body>
     <div class="navbar">
-        <div><span>Hello, <strong><?= session()->get('name'); ?></strong></span></div>
         <div>
-            <a href="<?= base_url('profile') ?>">Profile</a>
-            <a href="<?= base_url('tasks') ?>">Tasks</a>
-            <a href="<?= base_url('logout') ?>" style="color:red;">Log Out</a>
+            <a href="<?= base_url('lang/es') ?>" style="margin-right: 5px; font-size: 20px; text-decoration: none;" title="Español">🇪🇸</a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-right: 20px; font-size: 20px; text-decoration: none;" title="English">🇺🇸</a>
+            <span>Hello, <strong><?= session()->get('name'); ?></strong></span>
+        </div>
+        <div>
+            <a href="<?= base_url('dashboard') ?>"><?= lang('app.dashboard') ?></a>
+            <a href="<?= base_url('profile') ?>"><?= lang('app.profile') ?></a>
+            <?php if(session()->get('administrator') == 1): ?>
+                <a href="<?= base_url('users') ?>"><?= lang('app.users') ?></a>
+            <?php endif; ?>
+            <a href="<?= base_url('tasks') ?>"><?= lang('app.tasks') ?></a>
+            <a href="<?= base_url('logout') ?>" class="logout-btn" style="color: #d32f2f; font-weight: bold;"><?= lang('app.logout') ?></a>
         </div>
     </div>
     <div class="container">
-        <h2>Task Details</h2>
-        <a href="<?= base_url('tasks') ?>"><< back to index</a>
+        <h2><?= lang('app.task_details') ?></h2>
+        <a href="<?= base_url('tasks') ?>"><< <?= lang('app.back_to_index') ?></a>
         <hr>
-        <p><strong>ID:</strong> <?= $task['id'] ?></p>
-        <p><strong>Description:</strong> <?= esc($task['description']) ?></p>
-        <p><strong>Created at:</strong> <?= $task['created_at'] ?></p>
-        <p><strong>Updated at:</strong> <?= $task['updated_at'] ?></p>
+        <p><strong><?= lang('app.id') ?>:</strong> <?= $task['id'] ?></p>
+        <p><strong><?= lang('app.description') ?>:</strong> <?= esc($task['description']) ?></p>
+        <p><strong><?= lang('app.created_at') ?>:</strong> <?= $task['created_at'] ?></p>
+        <p><strong><?= lang('app.updated_at') ?>:</strong> <?= $task['updated_at'] ?></p>
         <br>
-        <a href="<?= base_url('tasks/edit/'.$task['id']) ?>" class="btn btn-edit">Edit</a>
-        <a href="<?= base_url('tasks/delete/'.$task['id']) ?>" class="btn btn-delete" onclick="return confirm('Are you sure?');">Delete</a>
+        <a href="<?= base_url('tasks/edit/'.$task['id']) ?>" class="btn btn-edit"><?= lang('app.edit') ?></a>
+        <a href="<?= base_url('tasks/delete/'.$task['id']) ?>" class="btn btn-delete" onclick="return confirm('Are you sure?');"><?= lang('app.delete') ?></a>
     </div>
 </body>
 </html>

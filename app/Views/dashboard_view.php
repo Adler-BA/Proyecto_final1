@@ -17,20 +17,33 @@
 <body>
     <div class="navbar">
         <div>
-            <span>Hello, <strong><?= session()->get('name'); ?></strong></span>
+        <a href="<?= base_url('lang/es') ?>" style="margin-right: 5px; font-size: 20px; text-decoration: none;" title="Español">🇪🇸</a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-right: 20px; font-size: 20px; text-decoration: none;" title="English">🇺🇸</a>
+            <?php if(session()->get('isLoggedIn')): ?>
+                <span style="margin-left: 15px;">Hello, <strong><?= session()->get('name'); ?></strong></span>
+            <?php else: ?>
+            <a href="<?= base_url('/') ?>" style="margin-left: 15px;"><?= lang('app.home') ?></a>
+            <?php endif; ?>
         </div>
         <div>
-            <a href="<?= base_url('profile') ?>">Profile</a>
-            <?php if(session()->get('administrator') == 1): ?>
-            <a href="<?= base_url('users') ?>">Users</a>
+            <?php if(session()->get('isLoggedIn')): ?>
+            <a href="<?= base_url('profile') ?>"><?= lang('app.profile') ?></a>
+                
+                <?php if(session()->get('administrator') == 1): ?>
+                    <a href="<?= base_url('users') ?>"><?= lang('app.users') ?></a>
+                <?php endif; ?>
+                
+                <a href="<?= base_url('tasks') ?>"><?= lang('app.tasks') ?></a>
+                <a href="<?= base_url('logout') ?>" style="color: #d32f2f; font-weight: bold;"><?= lang('app.logout') ?></a>
+            <?php else: ?>
+            <a href="<?= base_url('signup') ?>"><?= lang('app.signup') ?></a>
+                <a href="<?= base_url('login') ?>"><?= lang('app.login') ?></a>
             <?php endif; ?>
-            <a href="<?= base_url('tasks') ?>">Tasks</a>
-            <a href="<?= base_url('logout') ?>" class="logout-btn">Log Out</a>
         </div>
-    </div>
+    </div>            
     <div class="dashboard-container">
-        <h1>Bienvenido al Organizador de Tareas</h1>
-        <p>La sesión se ha iniciado correctamente.</p>
+        <h1><?= lang('app.welcome') ?></h1>
+        <p><?= lang('app.session_started') ?></p>
     </div>  
 </body>
 </html>

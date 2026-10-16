@@ -21,21 +21,22 @@
 <body>
     <div class="navbar">
         <div>
+            <a href="<?= base_url('lang/es') ?>" style="margin-right: 5px; font-size: 20px; text-decoration: none;" title="Español">🇪🇸</a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-right: 20px; font-size: 20px; text-decoration: none;" title="English">🇺🇸</a>
             <span>Hello, <strong><?= session()->get('name'); ?></strong></span>
         </div>
         <div>
-            <a href="<?= base_url('profile') ?>">Profile</a>
-            
+            <a href="<?= base_url('dashboard') ?>"><?= lang('app.dashboard') ?></a>
+            <a href="<?= base_url('profile') ?>"><?= lang('app.profile') ?></a>
             <?php if(session()->get('administrator') == 1): ?>
-                <a href="<?= base_url('users') ?>">Users</a>
+                <a href="<?= base_url('users') ?>"><?= lang('app.users') ?></a>
             <?php endif; ?>
-            
-            <a href="<?= base_url('tasks') ?>">Tasks</a>
-            <a href="<?= base_url('logout') ?>" class="logout-btn">Log out</a>
+            <a href="<?= base_url('tasks') ?>"><?= lang('app.tasks') ?></a>
+            <a href="<?= base_url('logout') ?>" class="logout-btn" style="color: #d32f2f; font-weight: bold;"><?= lang('app.logout') ?></a>
         </div>
     </div>
     <div class="container">
-        <h2>Mi Perfil</h2>
+        <h2><?= lang('app.title') ?></h2>
         <?php if(session()->getFlashdata('error')): ?>
             <div class="msg-error"><?= session()->getFlashdata('error') ?></div>
         <?php endif; ?>
@@ -51,33 +52,33 @@
         <form action="<?= base_url('profile/update') ?>" method="POST" enctype="multipart/form-data">
             
             <div class="form-group">
-                <label>Foto de Perfil</label>
+                <label><?= lang('app.email') ?></label>
                 <input type="file" name="profile_image" accept="image/*">
             </div>
 
             <div class="form-group">
-                <label>Nombre</label>
+                <label><?= lang('app.name') ?></label>
                 <input type="text" name="name" value="<?= esc($user_info['name'] ?? session()->get('name')) ?>" required>
             </div>
             
             <div class="form-group">
-                <label>Correo Electrónico</label>
+                <label><?= lang('app.email') ?></label>
                 <input type="email" name="email" value="<?= esc($user_info['email'] ?? session()->get('email')) ?>" required>
             </div>
             
             <div class="form-group">
-                <label>Nueva Contraseña. Deje en blanco si no busca cambiar la contraseña</label>
+                <label><?= lang('app.new_passwordd') ?></label>
                 <input type="password" name="new_password">
             </div>
 
             <hr style="margin: 20px 0; border: 1px solid #ccc;">
 
             <div class="form-group">
-                <label style="color: #d32f2f;">Contraseña Actual. Ingresela para guardar cambios.</label>
+                <label style="color: #d32f2f;"><?= lang('app.current_password') ?></label>
                 <input type="password" name="current_password" required>
             </div>
 
-            <button type="submit" class="btn-save">Guardar Cambios</button>
+            <button type="submit" class="btn-save"><?= lang('app.save_changes') ?></button>
         </form>
     </div>
 </body>

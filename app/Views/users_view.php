@@ -22,29 +22,33 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div> 
+   <div class="navbar">
+        <div>
+            <a href="<?= base_url('lang/es') ?>" style="margin-right: 5px; font-size: 20px; text-decoration: none;" title="Español">🇪🇸</a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-right: 20px; font-size: 20px; text-decoration: none;" title="English">🇺🇸</a>
             <span>Hello, <strong><?= session()->get('name'); ?></strong></span>
         </div>
         <div>
-            <a href="<?= base_url('profile') ?>">Profile</a>
-            <a href="<?= base_url('users') ?>">Users</a>
-            <a href="<?= base_url('tasks') ?>">Tasks</a>
-            <a href="<?= base_url('logout') ?>">Log Out</a>
+            <a href="<?= base_url('dashboard') ?>"><?= lang('app.dashboard') ?></a>
+            <a href="<?= base_url('profile') ?>"><?= lang('app.profile') ?></a>
+            <?php if(session()->get('administrator') == 1): ?>
+                <a href="<?= base_url('users') ?>"><?= lang('app.users') ?></a>
+            <?php endif; ?>
+            <a href="<?= base_url('tasks') ?>"><?= lang('app.tasks') ?></a>
+            <a href="<?= base_url('logout') ?>" class="logout-btn" style="color: #d32f2f; font-weight: bold;"><?= lang('app.logout') ?></a>
         </div>
     </div>
-
     <div class="container">
-        <h2>Users Management</h2>
-        <a href="<?= base_url('users/new') ?>" class="btn-new">New Users</a>
+        <h2><?= lang('app.users') ?></h2>
+        <a href="<?= base_url('users/new') ?>" class="btn-new"><?= lang('app.new_user') ?></a>
         <table>
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Active</th>
-                    <th>Administrator</th>
-                    <th>Created At</th>
+                    <th><?= lang('app.name') ?></th>
+                    <th><?= lang('app.email') ?></th>
+                    <th><?= lang('app.active') ?></th>
+                    <th><?= lang('app.administrator') ?></th>
+                    <th><?= lang('app.created_at') ?></th>
                 </tr>
             </thead>
             <tbody>
@@ -64,7 +68,7 @@
             </tbody>
         </table>
         <div style="margin-top: 20px; text-align: center;">
-            <?= $pager->simpleLinks() ?>
+            <?= $pager->simpleLinks('default', 'default_simple') ?>
         </div>
     </div> 
 </body>

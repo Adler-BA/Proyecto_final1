@@ -33,33 +33,34 @@
     </style>
 </head>
 <body>
-
     <div class="navbar">
         <div>
+            <a href="<?= base_url('lang/es') ?>" style="margin-right: 5px; font-size: 20px; text-decoration: none;" title="Español">🇪🇸</a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-right: 20px; font-size: 20px; text-decoration: none;" title="English">🇺🇸</a>
             <span>Hello, <strong><?= session()->get('name'); ?></strong></span>
         </div>
         <div>
-            <a href="<?= base_url('profile') ?>">Profile</a>
+            <a href="<?= base_url('dashboard') ?>"><?= lang('app.dashboard') ?></a>
+            <a href="<?= base_url('profile') ?>"><?= lang('app.profile') ?></a>
             <?php if(session()->get('administrator') == 1): ?>
-                <a href="<?= base_url('users') ?>">Users</a>
+                <a href="<?= base_url('users') ?>"><?= lang('app.users') ?></a>
             <?php endif; ?>
-            <a href="<?= base_url('tasks') ?>">Tasks</a>
-            <a href="<?= base_url('logout') ?>" class="logout-btn">Log out</a>
+            <a href="<?= base_url('tasks') ?>"><?= lang('app.tasks') ?></a>
+            <a href="<?= base_url('logout') ?>" class="logout-btn" style="color: #d32f2f; font-weight: bold;"><?= lang('app.logout') ?></a>
         </div>
     </div>
-
     <div class="tasks-container">
-        <h2>My Tasks</h2>
+        <h2><?= lang('app.tasks') ?></h2>
         <div class="forms-wrapper">
             <form class="task-form" action="<?= base_url('tasks/store') ?>" method="POST">
-                <input type="text" name="description" placeholder="Qué necesitas?" required>
-                <button type="submit" class="btn-add">Add Task</button>
+                <input type="text" name="description" placeholder="<?= lang('app.what_needs_to_be_done') ?>" required>
+                <button type="submit" class="btn-add"><?= lang('app.add_task') ?></button>
             </form>
 
             <form class="search-form" action="<?= base_url('tasks') ?>" method="GET">
-                <input type="text" name="search" placeholder="Buscar" value="<?= esc($search ?? '') ?>">
-                <button type="submit" class="btn-search">Search</button>
-                <a href="<?= base_url('tasks') ?>" class="btn-clear">Clear</a>
+                <input type="text" name="search" placeholder="<?= lang('app.search') ?>" value="<?= esc($search ?? '') ?>">
+                <button type="submit" class="btn-search"><?= lang('app.search') ?></button>
+                <a href="<?= base_url('tasks') ?>" class="btn-clear"><?= lang('app.clear_search') ?></a>
             </form>
         </div>
 
@@ -73,16 +74,16 @@
                             </a>
                             <span class="task-date">Created: <?= date('d M Y, H:i', strtotime($task['created_at'])) ?></span>
                         </div>
-                        <a href="<?= base_url('tasks/delete/'.$task['id']) ?>" class="btn-delete" onclick="return confirm('Are you sure you want to delete this task?');">Delete</a>
+                        <a href="<?= base_url('tasks/delete/'.$task['id']) ?>" class="btn-delete" onclick="return confirm('Estas seguro de borrar esta tarea?');"><?= lang('app.delete') ?></a>
                     </li>
                 <?php endforeach; ?>
             <?php else: ?>
-                <p class="no-tasks">No tienes ninguna tarea en este momento.</p>
+                <p class="no-tasks"><?= lang('app.no_tasks') ?></p>
             <?php endif; ?>
         </ul>
 
         <div style="margin-top: 20px; text-align: center; font-weight: bold;">
-            <?= $pager->simpleLinks() ?>
+            <?= $pager->simpleLinks('default', 'default_simple') ?>
         </div>
     </div>
 

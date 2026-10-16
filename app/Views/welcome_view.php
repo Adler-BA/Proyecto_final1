@@ -16,19 +16,19 @@
 
     <div class="navbar">
         <div>
-            <a href="<?= base_url('/') ?>">Home</a>
-            <a href="#">English</a>
-            <a href="#">Español</a>
+        <a href="<?= base_url('/') ?>"><?= lang('app.home') ?></a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-left: 15px;">EN</a>
+            <a href="<?= base_url('lang/es') ?>">ES</a>
         </div>
         <div>
-            <a href="<?= base_url('signup') ?>">Sign up</a>
-            <a href="<?= base_url('login') ?>">Log in</a>
+            <a href="<?= base_url('signup') ?>"><?= lang('app.signup') ?></a>
+            <a href="<?= base_url('login') ?>"><?= lang('app.login') ?></a>
         </div>
     </div>
 
     <div class="content">
-        <h1>Welcome</h1>
-        <p>Bienvenido al organizador de Tareas.</p>
+        <h1><?= lang('app.welcomme') ?></h1>
+        <p><?= lang('app.welcome') ?>.</p>
     </div>
 
 </body>

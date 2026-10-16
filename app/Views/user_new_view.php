@@ -21,43 +21,48 @@
 </head>
 <body>
     <div class="navbar">
-        <div> 
+        <div>
+            <a href="<?= base_url('lang/es') ?>" style="margin-right: 5px; font-size: 20px; text-decoration: none;" title="Español">🇪🇸</a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-right: 20px; font-size: 20px; text-decoration: none;" title="English">🇺🇸</a>
             <span>Hello, <strong><?= session()->get('name'); ?></strong></span>
         </div>
         <div>
-            <a href="<?= base_url('profile') ?>">Profile</a>
-            <a href="<?= base_url('users') ?>">Users</a>
-            <a href="<?= base_url('tasks') ?>">Tasks</a>
-            <a href="<?= base_url('logout') ?>" class="logout-btn">Log out</a>
+            <a href="<?= base_url('dashboard') ?>"><?= lang('app.dashboard') ?></a>
+            <a href="<?= base_url('profile') ?>"><?= lang('app.profile') ?></a>
+            <?php if(session()->get('administrator') == 1): ?>
+                <a href="<?= base_url('users') ?>"><?= lang('app.users') ?></a>
+            <?php endif; ?>
+            <a href="<?= base_url('tasks') ?>"><?= lang('app.tasks') ?></a>
+            <a href="<?= base_url('logout') ?>" class="logout-btn" style="color: #d32f2f; font-weight: bold;"><?= lang('app.logout') ?></a>
         </div>
     </div>
 
     <div class="container">
-        <h2>New User</h2>
-        <a href="<?= base_url('users') ?>" style="color: #2196F3; text-decoration: none; margin:botton: 20px; display: block;"><< back to index</a>
+        <h2><?= lang('app.new_user') ?></h2>
+        <a href="<?= base_url('users') ?>" style="color: #2196F3; text-decoration: none; margin:botton: 20px; display: block;"><< <?= lang('app.back_to_index') ?></a>
         <form action="<?= base_url('user/store') ?>" method="POST">
             <div class="form-group">
-                <label>Name</label>
+                <label><?= lang('app.name') ?></label>
                 <input type="text" name="name" required>
             </div>
             <div class="form-group">
-                <label>Email</label>
+                <label><?= lang('app.email') ?></label>
                 <input type="email" name="email" required>
             </div>
             <div class="form-group">
-                <label>Password</label>
+                <label><?= lang('app.password') ?></label>
                 <input type="password" name="password" required>
             </div>
             <div class="form-group">
-                <label>Repeat Password</label>
+                <label><?= lang('app.repeat_password') ?></label>
                 <input type="password" name="repeat_password" required>
             </div>
             <div class="checkbox-group">
-                <label><input type="checkbox" name="active" value="1" checked>Active</label>
-                <label><input type="checkbox" name="administrator" value="1">Administrator</label>
+                <label><input type="checkbox" name="active" value="1" checked><?= lang('app.active') ?></label>
+                <label><input type="checkbox" name="administrator" value="1"><?= lang('app.administrator') ?></label>
             </div>
-            <button type="submit" class="btn-save">Save</button>
-            <a href="<?= base_url('users') ?>" class="btn-cancel">Cancel</a>
+            <button type="submit" class="btn-save"><?= lang('app.save') ?></button>
+            <a href="<?= base_url('users') ?>" class="btn-cancel"><?= lang('app.cancel') ?></a>
         </form>
     </div>
 </body>

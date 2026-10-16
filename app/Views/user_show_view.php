@@ -14,27 +14,34 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div><span>Hello, <strong><?= session()->get('name'); ?></strong></span></div>
+   <div class="navbar">
         <div>
-            <a href="<?= base_url('profile') ?>">Profile</a>
-            <a href="<?= base_url('users') ?>">Users</a>
-            <a href="<?= base_url('tasks') ?>">Tasks</a>
-            <a href="<?= base_url('logout') ?>" style="color:red;">Log out</a>
+            <a href="<?= base_url('lang/es') ?>" style="margin-right: 5px; font-size: 20px; text-decoration: none;" title="Español">🇪🇸</a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-right: 20px; font-size: 20px; text-decoration: none;" title="English">🇺🇸</a>
+            <span>Hello, <strong><?= session()->get('name'); ?></strong></span>
+        </div>
+        <div>
+            <a href="<?= base_url('dashboard') ?>"><?= lang('app.dashboard') ?></a>
+            <a href="<?= base_url('profile') ?>"><?= lang('app.profile') ?></a>
+            <?php if(session()->get('administrator') == 1): ?>
+                <a href="<?= base_url('users') ?>"><?= lang('app.users') ?></a>
+            <?php endif; ?>
+            <a href="<?= base_url('tasks') ?>"><?= lang('app.tasks') ?></a>
+            <a href="<?= base_url('logout') ?>" class="logout-btn" style="color: #d32f2f; font-weight: bold;"><?= lang('app.logout') ?></a>
         </div>
     </div>
     <div class="container">
-        <h2>User</h2>
-       <a href="<?= base_url('users') ?>" style="color: #2196F3; text-decoration: none;"><< back to index</a>
+        <h2><?= lang('app.user') ?></h2>
+       <a href="<?= base_url('users') ?>" style="color: #2196F3; text-decoration: none;"><< <?= lang('app.back_to_index') ?></a>
        <hr>
-        <p><strong>Name:</strong> <br><?= esc($user_info['name']) ?></p>
-        <p><strong>Email:</strong> <br><?= esc($user_info['email']) ?></p>
-        <p><strong>Active:</strong> <br><?= $user_info['active'] ? 'yes' : 'no' ?></p>
-        <p><strong>Administrator:</strong> <br><?= $user_info['administrator'] ? 'yes' : 'no' ?></p>
-        <p><strong>Created at:</strong> <br><?= $user_info['created_at'] ?></p>
-        <p><strong>Updated at:</strong> <br><?= $user_info['updated_at'] ?></p>
-        <a href="<?= base_url('users/edit/'.$user_info['id']) ?>" class="btn btn-edit">Edit</a>
-        <a href="<?= base_url('users/delete'.$user_info['id']) ?>" class="btn btn-delete" onclick="return confirm('Estas seguro?')">Delete</a>
+        <p><strong><?= lang('app.name') ?></strong> <br><?= esc($user_info['name']) ?></p>
+        <p><strong><?= lang('app.email') ?></strong> <br><?= esc($user_info['email']) ?></p>
+        <p><strong><?= lang('app.active') ?>:</strong> <br><?= $user_info['active'] ? 'yes' : 'no' ?></p>
+        <p><strong><?= lang('app.administrator') ?>:</strong> <br><?= $user_info['administrator'] ? 'yes' : 'no' ?></p>
+        <p><strong><?= lang('app.created_at') ?>:</strong> <br><?= $user_info['created_at'] ?></p>
+        <p><strong><?= lang('app.updated_at') ?>:</strong> <br><?= $user_info['updated_at'] ?></p>
+        <a href="<?= base_url('users/edit/'.$user_info['id']) ?>" class="btn btn-edit"><?= lang('app.edit') ?></a>
+        <a href="<?= base_url('users/delete'.$user_info['id']) ?>" class="btn btn-delete" onclick="return confirm('Estas seguro?')"><?= lang('app.delete') ?></a>
     </div>
 </body>
 </html>    

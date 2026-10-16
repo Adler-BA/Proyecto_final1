@@ -19,44 +19,44 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
+   <div class="navbar">
         <div>
-            <a href="<?= base_url('/') ?>">Home</a>
-            <a href="#">English</a>
-            <a href="#">Español</a>
+        <a href="<?= base_url('/') ?>"><?= lang('app.home') ?></a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-left: 15px;">EN</a>
+            <a href="<?= base_url('lang/es') ?>">ES</a>
         </div>
         <div>
-            <a href="<?= base_url('signup') ?>">Sign Up</a>
-            <a href="<?= base_url('login') ?>">Log In</a>
+            <a href="<?= base_url('signup') ?>"><?= lang('app.signup') ?></a>
+            <a href="<?= base_url('login') ?>"><?= lang('app.login') ?></a>
         </div>
     </div>
     <div class="signup-container">
-        <h2>Sign Up</h2>
+        <h2><?= lang('app.signup') ?></h2>
 
         <form action="<?= base_url('signup/store') ?>" method="POST">
             <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name"><?= lang('app.name') ?></label>
                 <input type="text" id="name" name="name" required>
             </div>
 
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email"><?= lang('app.email') ?></label>
                 <input type="email" id="email" name="email" required>
             </div>
 
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password"><?= lang('app.password') ?></label>
                 <input type="password" id="password" name="password" required>
             </div>
 
             <div class="form-group">
-                <label for="repeat_password">Repeat password</label>
+                <label for="repeat_password"><?= lang('app.repeat_password') ?></label>
                 <input type="password" id="repeat_password" name="repeat_password" required>
             </div>
 
             <div class="btn-container">
-                <button type="submit" class="btn-signup">Sign Up</button>
-                <a href="<?= base_url('/') ?>" class="btn-cancel">Cancel</a>
+                <button type="submit" class="btn-signup"><?= lang('app.signup') ?></button>
+                <a href="<?= base_url('/') ?>" class="btn-cancel"><?= lang('app.cancel') ?></a>
             </div>
         </form>
     </div>

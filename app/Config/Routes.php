@@ -31,3 +31,4 @@ $routes->post('users/update/(:num)', 'Users::update/$1');
 $routes->get('users/delete/(:num)', 'Users::delete/$1');
 $routes->get('profile', 'Profile::index');
 $routes->post('profile/update', 'Profile::update');
+$routes->get('lang/(:any)', 'Language::set/$1');

@@ -19,39 +19,47 @@
 </head>
 <body>
     <div class="navbar">
-        <div><span>Hello, <strong><?= session()->get('name'); ?></strong></span></div>
         <div>
-            <a href="<?= base_url('profile') ?>">Profile</a>
-            <a href="<?= base_url('users') ?>">Users</a>
-            <a href="<?= base_url('tasks') ?>">Tasks</a>
-            <a href="<?= base_url('logout') ?>" style="color:red;">Log out</a>
+            <a href="<?= base_url('lang/es') ?>" style="margin-right: 5px; font-size: 20px; text-decoration: none;" title="Español">🇪🇸</a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-right: 20px; font-size: 20px; text-decoration: none;" title="English">🇺🇸</a>
+            <span>Hello, <strong><?= session()->get('name'); ?></strong></span>
         </div>
+        <div>
+            <a href="<?= base_url('dashboard') ?>"><?= lang('app.dashboard') ?></a>
+            <a href="<?= base_url('profile') ?>"><?= lang('app.profile') ?></a>
+            <?php if(session()->get('administrator') == 1): ?>
+                <a href="<?= base_url('users') ?>"><?= lang('app.users') ?></a>
+            <?php endif; ?>
+            <a href="<?= base_url('tasks') ?>"><?= lang('app.tasks') ?></a>
+            <a href="<?= base_url('logout') ?>" class="logout-btn" style="color: #d32f2f; font-weight: bold;"><?= lang('app.logout') ?></a>
+        </div>
+    </div>
         <div class="container">
-        <h2>Edit user</h2>
+        <h2><?= lang('app.edit_user') ?></h2>
         
         <form action="<?= base_url('users/update/'.$user_info['id']) ?>" method="POST">
             <div class="form-group">
-                <label>Name</label>
+                <label><?= lang('app.name') ?></label>
                 <input type="text" name="name" value="<?= esc($user_info['name']) ?>" required>
             </div>
             <div class="form-group">
-                <label>Email</label>
+                <label><?= lang('app.email') ?></label>
                 <input type="email" name="email" value="<?= esc($user_info['email']) ?>" required>
             </div>
             <div class="form-group">
-                <label>Passowrd (Deje en blanco para mantenerse actualizado)</label>
+                <label><?= lang('app.password') ?> (Deje en blanco para mantenerse actualizado)</label>
                 <input type="password" name="password">
             </div>
             <div class="form-group">
-                <label>Repeat Password</label>
+                <label><?= lang('app.repeat_password') ?></label>
                 <input type="password" name="repeat_password">
             </div>
             <div class="checkbox-group">
-                <label><input type="checkbox" name="active" value="1" <?= $user_info['active'] ? 'checked' : '' ?>>Active</label>
-                <label><input type="checkbox" name="administrator" value="1" <?= $user_info['administrator'] ? 'checked' : '' ?>>Administrator</label>
+                <label><input type="checkbox" name="active" value="1" <?= $user_info['active'] ? 'checked' : '' ?>><?= lang('app.active') ?></label>
+                <label><input type="checkbox" name="administrator" value="1" <?= $user_info['administrator'] ? 'checked' : '' ?>><?= lang('app.administrator') ?></label>
             </div>
-            <button type="submit" class="btn-save">Save</button>
-            <a href="<?= base_url('users/show/'.$user_info['id']) ?>" class="btn btn-cancel">Cancel</a>
+            <button type="submit" class="btn-save"><?= lang('app.save') ?></button>
+            <a href="<?= base_url('users/show/'.$user_info['id']) ?>" class="btn btn-cancel"><?= lang('app.cancel') ?></a>
         </form>
     </div>
 </body>

@@ -84,33 +84,33 @@ font-family: Arial, sans-serif;
 <body>
     <div class="navbar">
         <div>
-            <a href="<?= base_url('/') ?>">Home</a>
-            <a href="#">English</a>
-            <a href="#">Español</a>
+        <a href="<?= base_url('/') ?>"><?= lang('app.home') ?></a>
+            <a href="<?= base_url('lang/en') ?>" style="margin-left: 15px;">EN</a>
+            <a href="<?= base_url('lang/es') ?>">ES</a>
         </div>
         <div>
-            <a href="<?= base_url('signup') ?>">Sign Up</a>
-            <a href="<?= base_url('login') ?>">Log In</a>
+            <a href="<?= base_url('signup') ?>"><?= lang('app.signup') ?></a>
+            <a href="<?= base_url('login') ?>"><?= lang('app.login') ?></a>
         </div>
     </div>
     <div class="Login-container">
-        <h2>Login</h2>
+        <h2><?= lang('app.login') ?></h2>
         <form action="<?= base_url('login/authenticate') ?>" method="POST">
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email"><?= lang('app.email') ?></label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-grou">
-                <label for="pasword">Password</label>
+                <label for="pasword"><?= lang('app.password') ?></label>
                 <input type="password" id="password" name="password" required>
             </div>
         <div class="form-group" style="margin-bottom: 5px;">
             <input type="checkbox" id="remember" name="remember">
-            <label for="remember" style="display: inline; font-weight: normal;">Remember Me</label>
+            <label for="remember" style="display: inline; font-weight: normal;"><?= lang('app.remember_me') ?></label>
         </div>
     <div class="link-container">
-        <button type="submit" class="btn-login">Log In</button>
-        <a href="<?= base_url('forgot-password') ?>">Forgot Password</a>
+        <button type="submit" class="btn-login"><?= lang('app.login') ?></button>
+        <a href="<?= base_url('forgot-password') ?>"><?= lang('app.forgot_password') ?></a>
     </div>
     </form>
 </div>
