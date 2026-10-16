@@ -12,44 +12,48 @@ class Profile extends BaseController
             return redirect()->to(base_url('login'));
         }
         $userModel = new UserModel();
-        $data['user'] = $userModel->find($session->get('id'));
+        $data['user_info'] = $userModel->find($session->get('id'));
 
         return view('profile_view', $data);
     }
     public function update()
     {
         $session = session();
+        if (!$session->get('isLoggedIn')) {
+            return redirect()->to(base_url('login'));
+        }
         $userModel = new UserModel();
         $userId = $session->get('id');
-        $user = $userModel->find($userId);
-        $name = $this->request->getPost('name');
-        $email = $this->request->getPost('email');
-
-        $dataToUpdate = [
-            'name' => $name,
-            'email' => $email
-        ];
+        $currentUser = $userModel->find($userId);
 
         $current_password = $this->request->getPost('current_password');
-        $new_password = $this->request->getPost('new_password');
-        $repeat_password = $this->request->getPost('repeat_password');
-
-        if(!empty($current_password)) {
-            if (password_verify($current_password, $user['password'])) {
-                if($new_password === $repeat_password && !empty($new_password)) {
-                      $dataToUpdate['password'] = password_hash($new_password, PASSWORD_DEFAULT);
-                } else {
-                    die("Error. Las contraseñas ingresadas no coinciden.");
-                }
-            } else {
-                die("Error. La contraseña actual es incorrecta.");
-            }
+        if(!password_verify($current_password, $currentUser['password'])) {
+            $session->setFlashdata('Error.', 'Contraseñal actual incorrecta. Los cambios no han sido guardados');
+            return redirect()->to(base_url('profile'));
         }
-        $userModel->update($userId, $dataToUpdate);
-        $session->set([
-            'name' => $name,
-            'email' => $email
-        ]);
-    return redirect()->to(base_url('profile'));
+
+        $new_password = $this->request->getPost('new_password');
+        if (!empty($new_password)) {
+            $data['password'] = password_hash($new_password, PASSWORD_DEFAULT);
+        }
+        $data = [
+            'name' => $this->request->getPost('name'),
+            'email' => $this->request->getPost('email'),
+        ];
+        $new_password = $this->request->getPost('new_password');
+        if (!empty($new_password)) {
+            $data['password'] = password_hash($new_password, PASSWORD_DEFAULT);
+        }
+        $file = $this->request->getFile('profile_image');
+        if ($file && $file->isValid() && !$file->hasMoved()) {
+            $imageName = $file->getRandomName();
+            $file->move('uploads/', $imageName);
+            $data['profile_image'] = $imageName;
+        }
+        $userModel->update($userId, $data);
+        $session->set('name', $data['name']);
+        $session->setFlashdata('Completado.', 'Perfil actualizado');
+
+        return redirect()->to(base_url('profile'));
     }
 }

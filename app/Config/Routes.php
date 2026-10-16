@@ -29,3 +29,5 @@ $routes->get('users/show/(:num)', 'Users::show/$1');
 $routes->get('users/edit/(:num)', 'Users::edit/$1');
 $routes->post('users/update/(:num)', 'Users::update/$1');
 $routes->get('users/delete/(:num)', 'Users::delete/$1');
+$routes->get('profile', 'Profile::index');
+$routes->post('profile/update', 'Profile::update');

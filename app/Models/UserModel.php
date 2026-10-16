@@ -14,6 +14,7 @@ class UserModel extends Model
         'password',
         'active',
         'administrator',
+        'profile_image'
     ];
     protected $useTimestamps  = true;
     protected $createdField   = 'created_at';
