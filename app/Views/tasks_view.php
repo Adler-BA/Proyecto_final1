@@ -53,7 +53,7 @@
                 <?php foreach($tasks as $task): ?>
                     <li class="task-item">
                         <div>
-                            <span class="task-desc"><?= esc($task['description']) ?></span>
+                            <a href="<?= base_url('tasks/show/'.$task['id']) ?>" class="task-desc" style="text-decoration:none;"><?= esc($task['description']) ?></a>
                             <span class="task-date">Created: <?= date('d M Y, H:i', strtotime($task['created_at'])) ?></span>
                         </div>
                         <a href="<?= base_url('tasks/delete/'.$task['id']) ?>" class="btn-delete" onclick="return confirm('Are you sure you want to delete this task?');">Delete</a>
