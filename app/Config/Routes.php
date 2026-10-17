@@ -39,3 +39,4 @@ $routes->post('login/updatePassword', 'Login::updatePassword');
 $routes->post('dashboard/uploadPhoto', 'Dashboard::uploadPhoto');
 $routes->get('profile/deletePhoto', 'Profile::deletePhoto');
 $routes->get('activate/(:any)', 'Login::activateAccount/$1');
+$routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
