@@ -3053,3 +3053,468 @@ WARNING - 2026-10-16 23:07:45 --> [DEPRECATED] Creation of dynamic property App\
  4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:15:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:15:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:15:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:16:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:16:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:23:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:23:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:23:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:28:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:28:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:28:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:32:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:32:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:32:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:37:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:37:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:37:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:38:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:38:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Dashboard::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:38:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Tasks::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:38:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Profile::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:38:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Language::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:38:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Profile::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:40:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:40:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:41:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:41:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:41:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:46:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:46:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-16 23:46:25 --> Duplicate entry 'adlerbatzin1209@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'Miguel Luna\', \'adlerbatzin1209@gmail.com\', \'$2y$10$174iccXMu6Uxeq9LvrAy6uNTcPOW5QiaVEZUH6dX3bi9nq0e56xVq\', 0, \'901fb9effcf2abc1696d950a744d95c32f463c427455cba681e43c3792c8d5db\', \'2026-10-16 23:46:25\', \'2026-10-16 23:46:25\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'Miguel Luna\', \'adlerbatzin1209@gmail.com\', \'$2y$10$174iccXMu6Uxeq9LvrAy6uNTcPOW5QiaVEZUH6dX3bi9nq0e56xVq\', 0, \'901fb9effcf2abc1696d950a744d95c32f463c427455cba681e43c3792c8d5db\', \'2026-10-16 23:46:25\', \'2026-10-16 23:46:25\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'Miguel Luna\', \'adlerbatzin1209@gmail.com\', \'$2y$10$174iccXMu6Uxeq9LvrAy6uNTcPOW5QiaVEZUH6dX3bi9nq0e56xVq\', 0, \'901fb9effcf2abc1696d950a744d95c32f463c427455cba681e43c3792c8d5db\', \'2026-10-16 23:46:25\', \'2026-10-16 23:46:25\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:name:, :email:, :password:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Signup.php(23): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Signup->store()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 23:46:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'adlerbatzin1209@gmail.com' for key 'email'
+[Method: POST, Route: signup/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:name:, :email:, :password:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Signup.php(23): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Signup->store()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 23:46:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'adlerbatzin1209@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'Miguel Luna\', \'adlerbatzin1209@gmail.com\', \'$2y$10$174iccXMu6Uxeq9LvrAy6uNTcPOW5QiaVEZUH6dX3bi9nq0e56xVq\', 0, \'901fb9effcf2abc1696d950a744d95c32f463c427455cba681e43c3792c8d5db\', \'2026-10-16 23:46:25\', \'2026-10-16 23:46:25\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'Miguel Luna\', \'adlerbatzin1209@gmail.com\', \'$2y$10$174iccXMu6Uxeq9LvrAy6uNTcPOW5QiaVEZUH6dX3bi9nq0e56xVq\', 0, \'901fb9effcf2abc1696d950a744d95c32f463c427455cba681e43c3792c8d5db\', \'2026-10-16 23:46:25\', \'2026-10-16 23:46:25\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:name:, :email:, :password:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Signup.php(23): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Signup->store()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 23:46:25 --> [Caused by] mysqli_sql_exception: Duplicate entry 'adlerbatzin1209@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'Miguel Luna\', \'adlerbatzin1209@gmail.com\', \'$2y$10$174iccXMu6Uxeq9LvrAy6uNTcPOW5QiaVEZUH6dX3bi9nq0e56xVq\', 0, \'901fb9effcf2abc1696d950a744d95c32f463c427455cba681e43c3792c8d5db\', \'2026-10-16 23:46:25\', \'2026-10-16 23:46:25\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'Miguel Luna\', \'adlerbatzin1209@gmail.com\', \'$2y$10$174iccXMu6Uxeq9LvrAy6uNTcPOW5QiaVEZUH6dX3bi9nq0e56xVq\', 0, \'901fb9effcf2abc1696d950a744d95c32f463c427455cba681e43c3792c8d5db\', \'2026-10-16 23:46:25\', \'2026-10-16 23:46:25\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'Miguel Luna\', \'adlerbatzin1209@gmail.com\', \'$2y$10$174iccXMu6Uxeq9LvrAy6uNTcPOW5QiaVEZUH6dX3bi9nq0e56xVq\', 0, \'901fb9effcf2abc1696d950a744d95c32f463c427455cba681e43c3792c8d5db\', \'2026-10-16 23:46:25\', \'2026-10-16 23:46:25\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:name:, :email:, :password:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Signup.php(23): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Signup->store()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:47:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:47:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:47:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:49:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:52:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-16 23:52:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2026-10-16 23:52:33 --> 220 smtp.gmail.com ESMTP 71dfb90a1353d-5ea9b474b2asm2752393e0c.4 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [186.33.0.211]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK 71dfb90a1353d-5ea9b474b2asm2752393e0c.4 - gsmtp
+
+to: 250 2.1.5 OK 71dfb90a1353d-5ea9b474b2asm2752393e0c.4 - gsmtp
+
+data: 354 Go ahead 71dfb90a1353d-5ea9b474b2asm2752393e0c.4 - gsmtp
+
+
+quit: 
+The following SMTP error was encountered: 
+The following SMTP error was encountered: 
+DEBUG - 2026-10-16 23:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:52:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:55:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:55:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\ForgotPassword::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:55:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:56:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:56:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:56:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:56:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-10-16 23:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:56:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-16 23:57:03 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2026-10-16 23:57:03 --> 220 smtp.gmail.com ESMTP 71dfb90a1353d-5ea9b518bc8sm2835167e0c.11 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [186.33.0.211]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK 71dfb90a1353d-5ea9b518bc8sm2835167e0c.11 - gsmtp
+
+to: 250 2.1.5 OK 71dfb90a1353d-5ea9b518bc8sm2835167e0c.11 - gsmtp
+
+data: 354 Go ahead 71dfb90a1353d-5ea9b518bc8sm2835167e0c.11 - gsmtp
+
+
+quit: 
+The following SMTP error was encountered: 
+The following SMTP error was encountered: 
+DEBUG - 2026-10-16 23:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-16 23:57:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Signup::$session is deprecated in APPPATH\Controllers\BaseController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(945): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

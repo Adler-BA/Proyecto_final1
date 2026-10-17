@@ -18,6 +18,7 @@ class UserModel extends Model
         'reset_expires_at',
         'profile_image',
         'profile_picture',
+        'activation_token'
     ];
     protected $useTimestamps  = true;
     protected $createdField   = 'created_at';

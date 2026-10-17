@@ -21,6 +21,9 @@ class Login extends BaseController
         $user = $userModel->where('email', $email)->first();
 
         if ($user) {
+            if ($user['active'] == 0) {
+                return redirect()->back()->with('error', 'Debes activar tu cuenta primero. Revisa tu correo electrónico.');
+            }
             if (password_verify($password, $user['password'])) {
                 $ses_data = [
                     'id'            => $user['id'],
@@ -144,10 +147,30 @@ class Login extends BaseController
             ];
             $userModel->update($user['id'], $data);
 
-            return redirect()->to(base_url('login'))->with('success', 'Tu contraseña ha sido actualizada. ¡Inicia sesión!');
+            return redirect()->to(base_url('login'))->with('success', 'Tu contraseña ha sido actualizada. Inicia sesión');
         }
 
         return redirect()->to(base_url('login'))->with('error', 'Error al actualizar la contraseña.');
     }
+    public function activateAccount($token = null)
+    {
+        if (empty($token)) {
+            return redirect()->to(base_url('login'))->with('error', 'Enlace no válido.');
+        }
+
+        $userModel = new \App\Models\UserModel();
+        $user = $userModel->where('activation_token', $token)->first();
+
+        if ($user) {
+        $userModel->update($user['id'], [
+                'active' => 1,
+                'activation_token' => null
+            ]);
+
+            return redirect()->to(base_url('login'))->with('success', 'Tu cuenta ha sido activada. Ya puedes iniciar sesión.');
+        } else {
+            return redirect()->to(base_url('login'))->with('error', 'El enlace ha expirado o no existe.');
+        }
+    } 
 }
 
